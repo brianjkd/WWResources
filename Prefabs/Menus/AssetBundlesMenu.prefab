@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 223903658840647538}
   - component: {fileID: 114142725566621472}
   - component: {fileID: 114402805356380088}
-  - component: {fileID: 114184163455766002}
+  - component: {fileID: 114033628587608832}
   m_Layer: 5
   m_Name: AssetBundlesMenu
   m_TagString: Untagged
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114184163455766002}
+      - m_Target: {fileID: 114033628587608832}
         m_MethodName: OnClickPropFilter
         m_Mode: 1
         m_Arguments:
@@ -247,6 +247,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114033628587608832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653804322135008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eca33816f324c02b619aefddba4e1a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followCamera: 0
+  allPanels: []
+  allButtons: []
+  panel: {fileID: 0}
 --- !u!114 &114107761235451580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,18 +321,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114184163455766002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1653804322135008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8059783fa48d0024cafb74ce914a7e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 1399605872083784}
 --- !u!114 &114193656682140986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -390,7 +393,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114184163455766002}
+      - m_Target: {fileID: 114033628587608832}
         m_MethodName: OnClickTileFilter
         m_Mode: 1
         m_Arguments:
@@ -649,7 +652,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114184163455766002}
+      - m_Target: {fileID: 114033628587608832}
         m_MethodName: OnClickInteractableFilter
         m_Mode: 1
         m_Arguments:
@@ -711,7 +714,7 @@ Canvas:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653804322135008}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -720,6 +723,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

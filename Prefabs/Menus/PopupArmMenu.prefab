@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 223331618248954068}
   - component: {fileID: 114125886361468622}
   - component: {fileID: 114338614299719708}
+  - component: {fileID: 114422351977151592}
   m_Layer: 0
   m_Name: PopupArmMenu
   m_TagString: Untagged
@@ -195,6 +196,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114422351977151592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511268171462918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3752a8ddb2b24157a580eb3c56b391e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followCamera: 0
+  allPanels: []
+  allButtons: []
 --- !u!114 &114446043636849314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -397,7 +412,7 @@ Canvas:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1511268171462918}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -406,6 +421,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
