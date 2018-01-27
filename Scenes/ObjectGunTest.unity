@@ -692,11 +692,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &424447679 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1646693641338406, guid: 49fe90a415a3b4ba2ac97b8e2375c661,
-    type: 2}
-  m_PrefabInternal: {fileID: 1152170301}
 --- !u!1 &467028676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,11 +1268,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1211847090}
   - component: {fileID: 1211847089}
-  - component: {fileID: 1211847088}
   - component: {fileID: 1211847087}
   - component: {fileID: 1211847086}
   - component: {fileID: 1211847091}
-  - component: {fileID: 1211847092}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1293,13 +1286,6 @@ AudioListener:
   m_GameObject: {fileID: 1211847085}
   m_Enabled: 1
 --- !u!124 &1211847087
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1211847085}
-  m_Enabled: 1
---- !u!92 &1211847088
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1362,28 +1348,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1211847085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Script: {fileID: 11500000, guid: ba4272881e1842df9e5f98cffed9c317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1211847092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1211847085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5af8013702b64db1be2283a7b115e94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 5
-  distanceMax: 15
-  distanceMin: 0.5
-  target: {fileID: 0}
-  xSpeed: 200
-  yMaxLimit: 80
-  yMinLimit: -80
-  ySpeed: 200
+  marqueeGraphics: {fileID: 2800000, guid: 77065ea79a21043e58bf4272ac225d48, type: 3}
 --- !u!1001 &1284784375
 Prefab:
   m_ObjectHideFlags: 0
@@ -1751,7 +1719,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 1603632402}
-  playerReferenceScale: {fileID: 424447679}
 --- !u!1 &1670979017
 GameObject:
   m_ObjectHideFlags: 0
