@@ -13,6 +13,9 @@ Shader "WorldWizards/GridShader"
         Tags {"Queue"="Transparent" "RenderType"="Transparent" }
 		LOD 100
 		Blend One One
+		Cull Off
+		
+		Offset -1, -1
 
 		Pass
 		{
