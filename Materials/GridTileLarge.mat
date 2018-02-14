@@ -29,7 +29,7 @@ Material:
     m_Floats:
     - <noninit>: 0
     - _InvFade: 1
-    - _ViewDistance: 100
+    - _ViewDistance: 50
     m_Colors:
     - <noninit>: {r: 0, g: 1.2433415e-34, b: 0, a: 1.2433342e-34}
     - _MainColor: {r: 0.25735295, g: 0.56977683, b: 1, a: 1}
