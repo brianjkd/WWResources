@@ -14,6 +14,7 @@ Shader "WorldWizards/GridShader"
 		LOD 100
 		Blend One One
 		Cull Off
+	    ZWrite Off
 		
 		Offset -1, -1
 

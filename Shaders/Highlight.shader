@@ -91,7 +91,7 @@ Shader "Custom/Highlight" {
 
 				#else
 
-				fixed frag(v2f_img IN) : COLOR 
+				fixed4 frag(v2f_img IN) : COLOR 
 				{
 					return tex2D (_MainTex, IN.uv).r - tex2D(_OccludeMap, IN.uv).r;
 				}
@@ -126,7 +126,7 @@ Shader "Custom/Highlight" {
 
             #else
 
-            fixed frag() : COLOR {
+            fixed4 frag() : COLOR {
                 return 1.0;
             }
 
@@ -176,7 +176,7 @@ Shader "Custom/Highlight" {
 
             #else
 
-            fixed frag( v2f i ) : COLOR {          
+            fixed4 frag( v2f i ) : COLOR {          
                 float depthVal = LinearEyeDepth (tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)).r);
                 float zPos = i.projPos.z;
                 
